@@ -12,5 +12,19 @@
       "regexFilter": "^https?://(?:www\\.)?x\\.com(/.*)",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://imginn.com\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:www\\.)?instagram\\.com(/.*)",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
   }
 ]

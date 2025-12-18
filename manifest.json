@@ -1,14 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "X to XCancel Redirector",
-  "version": "1.0.0",
-  "description": "x.com linklerini otomatik olarak xcancel.com'a çevirir",
+  "name": "X to XCancel & Instagram to Imginn Redirector",
+  "version": "1.1.0",
+  "description": "x.com linklerini xcancel.com'a, instagram.com linklerini imginn.com'a çevirir",
   "permissions": [
     "declarativeNetRequest"
   ],
   "host_permissions": [
     "*://x.com/*",
-    "*://*.x.com/*"
+    "*://*.x.com/*",
+    "*://instagram.com/*",
+    "*://*.instagram.com/*"
   ],
   "declarative_net_request": {
     "rule_resources": [
