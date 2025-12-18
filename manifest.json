@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "X to XCancel Redirector",
+  "version": "1.0.0",
+  "description": "x.com linklerini otomatik olarak xcancel.com'a çevirir",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://x.com/*",
+    "*://*.x.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
