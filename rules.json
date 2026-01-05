@@ -19,11 +19,39 @@
     "action": {
       "type": "redirect",
       "redirect": {
+        "regexSubstitution": "https://imginn.com/p/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:www\\.)?instagram\\.com/.*reels?/([^/?]+)",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://imginn.com/stories/\\1/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:www\\.)?instagram\\.com/stories/([^/]+)/.*",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
         "regexSubstitution": "https://imginn.com\\1"
       }
     },
     "condition": {
-      "regexFilter": "^https?://(?:www\\.)?instagram\\.com(/.*)",
+      "regexFilter": "^https?://(?:www\\.)?instagram\\.com(/[^/]*/?$)",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   }

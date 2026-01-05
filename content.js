@@ -28,9 +28,29 @@ function replaceLinks() {
 
     // instagram.com veya www.instagram.com içeren linkleri değiştir
     if (href.includes('://instagram.com/') || href.includes('://www.instagram.com/')) {
-      const newHref = href
-        .replace('://instagram.com/', '://imginn.com/')
-        .replace('://www.instagram.com/', '://imginn.com/');
+      let newHref;
+
+      // /reel/ veya /reels/ içeren linkleri /p/ ile değiştir
+      if (href.includes('/reel/') || href.includes('/reels/')) {
+        // Reel ID'sini çıkar (username/reel/ID, reel/ID, reels/ID formatları için)
+        const reelMatch = href.match(/\/reels?\/([^/?]+)/);
+        if (reelMatch) {
+          const reelId = reelMatch[1];
+          newHref = href.replace(/https?:\/\/(?:www\.)?instagram\.com\/(?:[^/]+\/)?reels?\/[^/?]+/, `https://imginn.com/p/${reelId}`);
+        }
+      } else if (href.includes('/stories/')) {
+        // Stories linklerinden kullanıcı adını çıkar
+        const storyMatch = href.match(/\/stories\/([^/]+)\//);
+        if (storyMatch) {
+          const username = storyMatch[1];
+          newHref = `https://imginn.com/stories/${username}/`;
+        }
+      } else {
+        // Diğer linkler için normal dönüşüm (profil, ana sayfa vs.)
+        newHref = href
+          .replace('://instagram.com/', '://imginn.com/')
+          .replace('://www.instagram.com/', '://imginn.com/');
+      }
 
       link.href = newHref;
 
