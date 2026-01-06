@@ -1,4 +1,4 @@
-// Sayfa üzerindeki tüm x.com linklerini xcancel.com'a, instagram.com linklerini imginn.com'a çevir
+// Sayfa üzerindeki tüm x.com linklerini nitter.space'a, instagram.com linklerini imginn.com'a çevir
 
 function replaceLinks() {
   // X.com linklerini bul ve değiştir
@@ -10,8 +10,8 @@ function replaceLinks() {
     // x.com veya www.x.com içeren linkleri değiştir
     if (href.includes('://x.com/') || href.includes('://www.x.com/')) {
       const newHref = href
-        .replace('://x.com/', '://xcancel.com/')
-        .replace('://www.x.com/', '://xcancel.com/');
+        .replace('://x.com/', '://nitter.space/')
+        .replace('://www.x.com/', '://nitter.space/');
 
       link.href = newHref;
 

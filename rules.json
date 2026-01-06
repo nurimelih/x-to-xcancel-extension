@@ -5,7 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://xcancel.com\\1"
+        "regexSubstitution": "https://nitter.space\\1"
       }
     },
     "condition": {
