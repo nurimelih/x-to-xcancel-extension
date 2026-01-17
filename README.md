@@ -1,6 +1,6 @@
 # X to XCancel & Instagram to Imginn Redirector
 
-x.com ve Instagram linklerini alternatif istemcilere yonlendiren Chrome uzantisi.
+x.com ve Instagram linklerini alternatif web sitelerine yonlendiren Chrome tabanlı tarayıcı uzantisi.
 
 ## Hakkinda
 
@@ -10,7 +10,7 @@ Bu uzanti:
 
 ## Kurulum
 
-Paketlenmemis uzanti olarak Chrome tabanli tarayicilara eklenebilir:
+Paketlenmemis uzanti olarak Chrome tabanli (Brave, Vivaldi, Opera vs) tarayicilara eklenebilir:
 
 1. Bu repoyu klonlayin veya ZIP olarak indirin
 2. Chrome'da `chrome://extensions` adresine gidin
