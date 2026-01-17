@@ -1,32 +1,37 @@
 # X to XCancel & Instagram to Imginn Redirector
 
-x.com ve Instagram linklerini alternatif istemcilere yonlendiren Chrome uzantisi.
+A Chrome-based browser extension that redirects x.com and Instagram links to alternative websites.
 
-## Hakkinda
+## About
 
-Bu uzanti:
-- **x.com** linklerini **nitter.space**'e yonlendirir
-- **instagram.com** linklerini **imginn.com**'a yonlendirir
+This extension:
+- Redirects **x.com** links to **nitter.space**
+- Redirects **instagram.com** links to **imginn.com**
 
-## Kurulum
+## Why
 
-Paketlenmemis uzanti olarak Chrome tabanli tarayicilara eklenebilir:
+- x.com and Instagram are designed to be attention-grabbing, keeping you on the site longer and encouraging endless scrolling.
+- With these redirects, I can visit these addresses in a clean, distraction-free way.
 
-1. Bu repoyu klonlayin veya ZIP olarak indirin
-2. Chrome'da `chrome://extensions` adresine gidin
-3. Sag ustten "Gelistirici modu"nu aktif edin
-4. "Paketlenmemis oge yukle" butonuna tiklayin
-5. Indirdiginiz klasoru secin
+## Installation
 
-## Desteklenen Yonlendirmeler
+Can be added to Chrome-based browsers (Brave, Vivaldi, Opera, etc.) as an unpacked extension:
 
-| Kaynak | Hedef |
-|--------|-------|
+1. Clone this repo or download as ZIP
+2. Go to `chrome://extensions` in Chrome
+3. Enable "Developer mode" in the top right
+4. Click "Load unpacked"
+5. Select the downloaded folder
+
+## Supported Redirects
+
+| Source | Destination |
+|--------|-------------|
 | x.com/* | nitter.space/* |
-| instagram.com/kullanici | imginn.com/kullanici |
+| instagram.com/username | imginn.com/username |
 | instagram.com/reel/ID | imginn.com/p/ID |
-| instagram.com/stories/kullanici | imginn.com/stories/kullanici |
+| instagram.com/stories/username | imginn.com/stories/username |
 
-## Lisans
+## License
 
 MIT
