@@ -5,7 +5,7 @@ A Chrome-based browser extension that redirects x.com and Instagram links to alt
 ## About
 
 This extension:
-- Redirects **x.com** links to **nitter.space**
+- Redirects **x.com** links to **nitter.catsarch**
 - Redirects **instagram.com** links to **imginn.com**
 
 ## Why
@@ -27,7 +27,7 @@ Can be added to Chrome-based browsers (Brave, Vivaldi, Opera, etc.) as an unpack
 
 | Source | Destination |
 |--------|-------------|
-| x.com/* | nitter.space/* |
+| x.com/* | nitter.catsarch/* |
 | instagram.com/username | imginn.com/username |
 | instagram.com/reel/ID | imginn.com/p/ID |
 | instagram.com/stories/username | imginn.com/stories/username |

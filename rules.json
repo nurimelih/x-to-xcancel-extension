@@ -5,7 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://nitter.space\\1"
+        "regexSubstitution": "https://nitter.catsarch\\1"
       }
     },
     "condition": {

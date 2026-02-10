@@ -2,9 +2,10 @@
   "manifest_version": 3,
   "name": "X to XCancel & Instagram to Imginn Redirector",
   "version": "1.1.0",
-  "description": "x.com linklerini nitter.space'e, instagram.com linklerini imginn.com'a çevirir",
+  "description": "x.com linklerini nitter.catsarch'e, instagram.com linklerini imginn.com'a çevirir",
   "permissions": [
-    "declarativeNetRequest"
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
     "*://x.com/*",
